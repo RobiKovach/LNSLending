@@ -1,0 +1,633 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: 15px;
+    top: 63%;
+    z-index: 5;
+
+     -webkit-left: 15px;
+    -webkit-top: 63%;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: url(../img/Arrow-left.png);
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: 45px;
+    top: 64%;
+    z-index: 5;
+
+    -webkit-right: 45px;
+    -webkit-top: 64%;
+
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: url(../img/Arrow-right.png);
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+button#slick-slide-control20 {
+    background: url(../img/circle-gromophone.png);
+    width: 113px;
+    height: 112px;
+    position: absolute;
+    top: -595%;
+    left: -2276%;
+}
+
+button#slick-slide-control20:before {
+    content: '';
+    background: url(../img/circle-gromophone-before.png);
+    width: 250px;
+    height: 253px;
+    top: -70px;
+    left: -80px;
+}
+
+button#slick-slide-control20:before:hover{
+    top: -62%;
+    left: -71%;
+}
+
+button#slick-slide-control21 {
+     background: url(../img/circle-phone.png);
+    width: 112px;
+    height: 111px;
+    position: absolute;
+    top: -257%;
+    left: -3286%;
+}
+
+button#slick-slide-control21:before {
+    content: '';
+    background: url(../img/circle-phone-before.png);
+    width: 250px;
+    height: 253px;
+    top: -63%;
+    left: -71%;
+}
+
+button#slick-slide-control22 {
+    background: url(../img/circle-money.png);
+    width: 112px;
+    height: 111px;
+    position: absolute;
+    top: -589%;
+    left: -4240%;
+}
+
+button#slick-slide-control22:before {
+    content: '';
+    background: url(../img/circle-money-before.png);
+    width: 250px;
+    height: 253px;
+    top: -63%;
+    left: -71%;
+}
+
+button#slick-slide-control23 {
+    background: url(../img/circle-diagram.png);
+    width: 112px;
+    height: 111px;
+    position: absolute;
+    top: -1400%;
+    left: -4581%;
+}
+
+button#slick-slide-control23:before {
+    content: '';
+    background: url(../img/circle-diagram-before.png);
+    width: 250px;
+    height: 253px;
+    top: -63%;
+    left: -71%;
+}
+
+button#slick-slide-control24 {
+    background: url(../img/circle-statistic.png);
+    width: 112px;
+    height: 111px;
+    position: absolute;
+    top: -2139%;
+    left: -4238%;
+}
+
+button#slick-slide-control24:before {
+    content: '';
+    background: url(../img/circle-stotistic-before.png);
+    width: 250px;
+    height: 253px;
+    top: -63%;
+    left: -72%;
+}
+
+button#slick-slide-control25 {
+    background: url(../img/circle-fen.png);
+    width: 112px;
+    height: 111px;
+    position: absolute;
+    top: -2139%;
+    left: -3315%;
+
+    -webkit-background: url(../img/circle-fen.png);
+    -webkit-width: 112px;
+    -webkit-height: 111px;
+    -webkit-position: absolute;
+    -webkit-top: -2139%;
+    -webkit-left: -3315%;
+}
+
+button#slick-slide-control25:before {
+    content: '';
+    background: url(../img/circle-fen-before.png);
+    width: 250px;
+    height: 253px;
+    top: -63%;
+    left: -71%;
+}
+
+
+
+button#slick-slide-control26 {
+    background: url(../img/circle-key.png);
+    width: 113px;
+    height: 111px;
+    position: absolute;
+    top: -1385%;
+    left: -3011%;
+}
+
+button#slick-slide-control26:before {
+    content: '';
+    background: url(../img/circle-key-before.png);
+    width: 250px;
+    height: 253px;
+    top: -63%;
+    left: -71%;
+}
+
+
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '';
+    text-align: center;
+
+    opacity: 0;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: black;
+}
+
+
+@media screen and (max-width: 426px){
+    button#slick-slide-control20 {
+    background: url(../img/circle-gromophone-phone.png);
+    top: 565%;
+    left: -55px;
+    position: absolute;
+    -webkit-background: url(../img/circle-gromophone-phone.png);
+}
+
+button#slick-slide-control20:before {
+    content: '';
+    background: url(../img/circle-gromophone-before-phone.png);
+    width: 180px;
+    height: 192px;
+    top: -18px;
+    left: -6px;
+    -webkit-background: url(../img/circle-gromophone-before-phone.png);
+}
+
+button#slick-slide-control20:before:hover{
+    top: 0%;
+    left: 0%;
+}
+
+button#slick-slide-control21 {
+     background: url(../img/circle-phone-phone.png);
+    width: 56px;
+    height: 55px;
+    position: absolute;
+    top: -257%;
+    left: -3286%;
+    -webkit-background: url(../img/circle-phone-phone.png);
+}
+
+button#slick-slide-control21:before {
+    content: '';
+    background: url(../img/circle-phone-before-phone.png);
+    width: 192px;
+    height: 192px;
+    top: -138%;
+    left: -142%;
+    -webkit-background: url(../img/circle-phone-before-phone.png);
+}
+
+button#slick-slide-control22 {
+    background: url(../img/circle-money-phone.png);
+    width: 56px;
+    height: 55px;
+    position: absolute;
+    top: -589%;
+    left: -4240%;
+    -webkit-background: url(../img/circle-money-phone.png);
+}
+
+button#slick-slide-control22:before {
+    content: '';
+    background: url(../img/circle-money-before-phone.png);
+    width: 192px;
+    height: 192px;
+    top: -139%;
+    left: -142%;
+    -webkit-background: url(../img/circle-money-before-phone.png);
+}
+
+button#slick-slide-control23 {
+    background: url(../img/circle-diagram-phone.png);
+    width: 56px;
+    height: 55px;
+    position: absolute;
+    top: -1400%;
+    left: -4581%;
+    -webkit-background: url(../img/circle-diagram-phone.png);
+}
+
+button#slick-slide-control23:before {
+    content: '';
+    background: url(../img/circle-diagram-before-phone.png);
+    width: 192px;
+    height: 192px;
+    top: -138%;
+    left: -142%;
+    -webkit-background: url(../img/circle-diagram-before-phone.png);
+}
+
+button#slick-slide-control24 {
+    background: url(../img/circle-statistic-phone.png);
+    width: 56px;
+    height: 55px;
+    position: absolute;
+    top: -2139%;
+    left: -4238%;
+    -webkit-background: url(../img/circle-statistic-phone.png);
+}
+
+button#slick-slide-control24:before {
+    content: '';
+    background: url(../img/circle-stotistic-before-phone.png);
+    width: 192px;
+    height: 192px;
+    top: -137%;
+    left: -143%;
+    -webkit-background: url(../img/circle-stotistic-before-phone.png);
+}
+
+button#slick-slide-control25 {
+    background: url(../img/circle-fen-phone.png);
+    width: 56px;
+    height: 55px;
+    position: absolute;
+    top: -2139%;
+    left: -3315%;
+
+    -webkit-background: url(../img/circle-fen-phone.png);
+    -webkit-width: 56px;
+    -webkit-height: 55px;
+    -webkit-position: absolute;
+    -webkit-top: -2139%;
+    -webkit-left: -3315%;
+}
+
+button#slick-slide-control25:before {
+    content: '';
+    background: url(../img/circle-fen-before-phone.png);
+    width: 192px;
+    height: 192px;
+    top: -138%;
+    left: -142%;
+    -webkit-background: url(../img/circle-fen-before-phone.png);
+}
+
+
+
+button#slick-slide-control26 {
+    background: url(../img/circle-key-phone.png);
+    width: 56px;
+    height: 55px;
+    position: absolute;
+    top: -1385%;
+    left: -3011%;
+    -webkit-background: url(../img/circle-keyphone.png);
+}
+
+button#slick-slide-control26:before {
+    content: '';
+    background: url(../img/circle-key-before-phone.png);
+    width: 164px;
+    height: 192px;
+    top: -138%;
+    left: -143%;
+    -webkit-background: url(../img/circle-key-before-phone.png);
+}
+
+}
+
+@media screen and (max-width: 380px){
+
+button#slick-slide-control20 {
+    top: -3486%;
+    left: 546%;
+}
+
+button#slick-slide-control20:before {
+    width: 180px;
+    height: 192px;
+    top: -18px;
+    left: -6px;
+}
+
+button#slick-slide-control20:before:hover{
+    top: 0%;
+    left: 0%;
+}
+
+button#slick-slide-control21 {
+    width: 56px;
+    height: 55px;
+}
+
+button#slick-slide-control21:before {
+    width: 192px;
+    height: 192px;
+    top: -138%;
+    left: -142%;
+}
+
+button#slick-slide-control22 {
+    width: 56px;
+    height: 55px;
+    top: -589%;
+    left: -4240%;
+}
+
+button#slick-slide-control22:before {
+    width: 192px;
+    height: 192px;
+    top: -139%;
+    left: -142%;
+}
+
+button#slick-slide-control23 {
+    width: 56px;
+    height: 55px;
+    top: -1400%;
+    left: -4581%;
+}
+
+button#slick-slide-control23:before {
+    width: 192px;
+    height: 192px;
+    top: -138%;
+    left: -142%;
+}
+
+button#slick-slide-control24 {
+    width: 56px;
+    height: 55px;
+    top: -2139%;
+    left: -4238%;
+}
+
+button#slick-slide-control24:before {
+    width: 192px;
+    height: 192px;
+    top: -137%;
+    left: -143%;
+}
+
+button#slick-slide-control25 {
+    background: url(../img/circle-fen-phone.png);
+    width: 56px;
+    height: 55px;
+    top: -2139%;
+    left: -3315%;
+
+    -webkit-width: 56px;
+    -webkit-height: 55px;
+    -webkit-top: -2139%;
+    -webkit-left: -3315%;
+}
+
+button#slick-slide-control25:before {
+    width: 192px;
+    height: 192px;
+    top: -138%;
+    left: -142%;
+}
+
+
+
+button#slick-slide-control26 {
+    width: 56px;
+    height: 55px;
+    top: -1385%;
+    left: -3011%;
+}
+
+button#slick-slide-control26:before {
+    width: 164px;
+    height: 192px;
+    top: -138%;
+    left: -143%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
